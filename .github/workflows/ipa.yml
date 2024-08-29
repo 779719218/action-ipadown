@@ -9,6 +9,9 @@ permissions: write-all
 
 on: 
   workflow_dispatch:
+  repository_dispatch:
+    types:
+      - downApp
     inputs:
       appleId:
         description: 'Apple ID Account'
