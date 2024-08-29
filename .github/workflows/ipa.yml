@@ -8,9 +8,6 @@ env:
 permissions: write-all
 
 on: 
-  repository_dispatch:
-    types:
-      - downApp
   workflow_dispatch:
     inputs:
       appleId:
