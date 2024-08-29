@@ -8,10 +8,10 @@ env:
 permissions: write-all
 
 on: 
-  workflow_dispatch:
   repository_dispatch:
     types:
       - downApp
+  workflow_dispatch:
     inputs:
       appleId:
         description: 'Apple ID Account'
